@@ -1,0 +1,24 @@
+{
+    "name": "services",
+    "title": "Services Block",
+    "description": "Service block",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "media-document",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/servicesBlock/block.php"
+    },
+    "example": {
+        "attributes": {
+            "mode": ["preview"],
+            "data": {
+                "_is_preview": ["true"]
+            }
+        }
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
