@@ -1,0 +1,24 @@
+{
+    "name": "row",
+    "title": "Row - Custom",
+    "description": "Block Row",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "menu-alt2",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/row/block.php"
+    },
+    "example": {
+        "attributes": {
+            "mode": ["preview"],
+            "data": {
+                "_is_preview": ["true"]
+            }
+        }
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

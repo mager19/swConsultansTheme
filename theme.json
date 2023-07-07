@@ -1,0 +1,164 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "palette": [
+                {
+                    "slug": "primary",
+                    "color": "#CD049A",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "primary-light",
+                    "color": "#FF6560",
+                    "name": "Primary Light"
+                },
+                {
+                    "slug": "primary-lighter",
+                    "color": "#F19898",
+                    "name": "Primary Lighter"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#670067",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "secondary-dark",
+                    "color": "#A91662",
+                    "name": "Secondary Dark"
+                },
+                {
+                    "slug": "secondary-light",
+                    "color": "#D94956",
+                    "name": "Secondary Light"
+                },
+                {
+                    "slug": "grey-50",
+                    "color": "#F9FAFB",
+                    "name": "Grey 50"
+                },
+                {
+                    "slug": "grey-100",
+                    "color": "#F2F4F7",
+                    "name": "Grey 100"
+                },
+                {
+                    "slug": "grey-200",
+                    "color": "#E4E7EC",
+                    "name": "Grey 200"
+                },
+                {
+                    "slug": "grey-300",
+                    "color": "#D0D5DD",
+                    "name": "Grey 300"
+                },
+                {
+                    "slug": "grey-400",
+                    "color": "#98A2B3",
+                    "name": "Grey 400"
+                },
+                {
+                    "slug": "grey-500",
+                    "color": "#667085",
+                    "name": "Grey 500"
+                },
+                {
+                    "slug": "grey-600",
+                    "color": "#475467",
+                    "name": "Grey 600"
+                },
+                {
+                    "slug": "grey-700",
+                    "color": "#344054",
+                    "name": "Grey 700"
+                },
+                {
+                    "slug": "grey-800",
+                    "color": "#1D2939",
+                    "name": "Grey 800"
+                },
+                {
+                    "slug": "grey-900",
+                    "color": "#101828",
+                    "name": "Grey 900"
+                },
+                {
+                    "slug": "alternate",
+                    "color": "#008DE7",
+                    "name": "Alternate"
+                },
+                {
+                    "slug": "black",
+                    "color": "#000",
+                    "name": "Black"
+                },
+                {
+                    "slug": "white",
+                    "color": "#fff",
+                    "name": "White"
+                }
+            ]
+        },
+        "typography": {
+            "fontSizes": [
+                {
+                    "slug": "display1",
+                    "size": "96px",
+                    "name": "Display 1"
+                },
+                {
+                    "slug": "title1",
+                    "size": "64px",
+                    "name": "Title 1"
+                },
+                {
+                    "slug": "title2",
+                    "size": "48px",
+                    "name": "Title 2"
+                },
+                {
+                    "slug": "title3",
+                    "size": "36px",
+                    "name": "Title 3"
+                },
+                {
+                    "slug": "title4",
+                    "size": "32px",
+                    "name": "Title 4"
+                },
+                {
+                    "slug": "title5",
+                    "size": "24px",
+                    "name": "Title 5"
+                },
+                {
+                    "slug": "title6",
+                    "size": "20px",
+                    "name": "Title 6"
+                },
+                {
+                    "slug": "overline",
+                    "size": "12px",
+                    "name": "Overline"
+                },
+                {
+                    "slug": "button",
+                    "size": "14px",
+                    "name": "Button"
+                },
+                {
+                    "slug": "body",
+                    "size": "16px",
+                    "name": "Body"
+                },
+                {
+                    "slug": "body-bold",
+                    "size": "18px",
+                    "name": "Body Bold"
+                }
+            ]
+        }
+    }
+}

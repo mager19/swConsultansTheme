@@ -1,0 +1,24 @@
+{
+    "name": "title-TextRight",
+    "title": "Title Left TextRight",
+    "description": "Block with title on the left and text right",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/title-textRight/block.php"
+    },
+
+    "example": {
+        "attributes": {
+            "mode": ["preview"],
+            "data": {
+                "_is_preview": ["true"]
+            }
+        }
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

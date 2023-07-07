@@ -1,0 +1,24 @@
+{
+    "name": "intro-page",
+    "title": "Intro Page",
+    "description": "Block introPage",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "align-pull-right",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/intro-page/block.php"
+    },
+    "example": {
+        "attributes": {
+            "mode": ["preview"],
+            "data": {
+                "_is_preview": ["true"]
+            }
+        }
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
