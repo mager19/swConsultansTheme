@@ -538,7 +538,7 @@ video {
 @media (min-width: 1280px) {
 
   .container {
-    max-width: 1280px;
+    max-width: 1140px;
   }
 }
 .visible {
@@ -1115,6 +1115,15 @@ video {
     justify-content: flex-end;
   }
 
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
+  }
+
   .lg\:text-left {
     text-align: left;
   }
@@ -1129,6 +1138,19 @@ video {
 
   .md\:\[\&_img\]\:h-\[564px\] img {
     height: 564px;
+  }
+
+  .md\:\[\&_img\]\:h-full img {
+    height: 100%;
+  }
+
+  .md\:\[\&_img\]\:w-full img {
+    width: 100%;
+  }
+
+  .md\:\[\&_img\]\:object-cover img {
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .\[\&_p\]\:text-grey-700 p {

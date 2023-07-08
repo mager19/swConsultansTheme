@@ -171,7 +171,7 @@ module.exports = {
                         maxWidth: "960px",
                     },
                     "@screen xl": {
-                        maxWidth: "1280px",
+                        maxWidth: "1140px",
                     },
                 },
             });

@@ -29,7 +29,7 @@ $image = get_field('intro_page_image');
         <div class="flex flex-wrap px-4 md:items-center">
             <?php if ($image) { ?>
                 <div class="w-full md:w-1/2 md:order-2">
-                    <figure class="m-0 w-full md:[&_img]:h-[564px]">
+                    <figure class="m-0 w-full md:[&_img]:h-full md:[&_img]:w-full md:[&_img]:object-cover lg:flex lg:justify-end">
                         <?php
                         swConsultans_get_Image($image);
                         ?>
@@ -40,7 +40,7 @@ $image = get_field('intro_page_image');
 
             <div class="w-full md:w-1/2 md:order-1">
                 <?php if ($title) { ?>
-                    <h3 class="text-title5 md:text-title4 [&_strong]:text-primary py-8 mb-0 text-grey-700 lg:max-w-md">
+                    <h3 class="text-title5 md:text-title4 [&_strong]:text-primary py-8 mb-0 text-grey-700 lg:max-w-md lg:pt-0">
                         <?php echo $title; ?>
                     </h3>
                 <?php
