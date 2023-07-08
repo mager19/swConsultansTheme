@@ -2,6 +2,7 @@
     "name": "intro-page",
     "title": "Intro Page",
     "description": "Block introPage",
+    "style": ["file:./block.css"],
     "category": "swConsultansBlocks",
     "apiVersion": 2,
     "icon": "align-pull-right",
