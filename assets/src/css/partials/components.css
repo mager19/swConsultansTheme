@@ -1,5 +1,5 @@
 .btn {
-    @apply h-12 flex items-center justify-center rounded-3xl px-16;
+    @apply h-12 flex items-center justify-center rounded-3xl px-16 no-underline;
 
     &--outline {
         @apply border-2 border-white text-white visited:text-white hover:bg-white hover:text-secondary font-semibold duration-500 transition-all ease-in-out;

@@ -1688,6 +1688,7 @@ blockquote p {
   border-radius: 1.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
+  text-decoration-line: none;
 }
 .btn--outline {
   border-width: 2px;
@@ -1787,6 +1788,9 @@ blockquote p {
 }
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mb-9 {
+  margin-bottom: 2.25rem;
 }
 .mt-14 {
   margin-top: 3.5rem;
@@ -2027,6 +2031,9 @@ blockquote p {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.pt-0 {
+  padding-top: 0px;
+}
 .text-center {
   text-align: center;
 }
@@ -2098,6 +2105,10 @@ blockquote p {
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(205 4 154 / var(--tw-text-opacity));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -2338,6 +2349,10 @@ blockquote p {
     max-width: 28rem;
   }
 
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2355,8 +2370,25 @@ blockquote p {
     padding-bottom: 0px;
   }
 
+  .lg\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .lg\:pt-16 {
+    padding-top: 4rem;
+  }
+
+  .lg\:pt-12 {
+    padding-top: 3rem;
   }
 
   .lg\:text-left {
@@ -2367,6 +2399,12 @@ blockquote p {
     font-size: 1.125rem;
     line-height: 1.575rem;
     font-weight: 700;
+  }
+
+  .lg\:text-title2 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+    font-weight: 600;
   }
 }
 @media (min-width: 768px) {

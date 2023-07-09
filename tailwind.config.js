@@ -67,7 +67,7 @@ module.exports = {
             display1: [
                 "6rem",
                 {
-                    fontFamily: "poppins",
+                    fontFamily: "nunito",
                     fontWeight: "600",
                     lineHeight: "6.375rem",
                 },
