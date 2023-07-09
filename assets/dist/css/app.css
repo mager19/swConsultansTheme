@@ -1680,6 +1680,35 @@ blockquote p {
 .icon-facebook_icon-11:before {
     content: "\e94b";
 }
+.btn {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+.btn--outline {
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn--outline:visited {
+  color: rgb(255 255 255 );
+}
+.btn--outline:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(103 0 103 / var(--tw-text-opacity));
+}
 .introPage {
   position: relative;
 }
@@ -1855,6 +1884,9 @@ blockquote p {
 .w-full {
   width: 100%;
 }
+.max-w-xs {
+  max-width: 20rem;
+}
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1954,6 +1986,12 @@ blockquote p {
   --tw-bg-opacity: 1;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
+}
 .p-0 {
   padding: 0px;
 }
@@ -1980,6 +2018,10 @@ blockquote p {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .py-8 {
   padding-top: 2rem;
@@ -2184,6 +2226,10 @@ blockquote p {
     width: 100%;
   }
 
+  .md\:w-screen {
+    width: 100vw;
+  }
+
   .md\:max-w-md {
     max-width: 28rem;
   }
@@ -2268,12 +2314,20 @@ blockquote p {
     height: 6rem;
   }
 
+  .lg\:h-\[140px\] {
+    height: 140px;
+  }
+
   .lg\:w-4\/12 {
     width: 33.333333%;
   }
 
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .lg\:max-w-\[289px\] {

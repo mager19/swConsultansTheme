@@ -5,6 +5,7 @@
 @import "./partials/nav.css";
 @import "./partials/footer.css";
 @import "./partials/icons.css";
+@import "./partials/components.css";
 @import "../../../blocks/blocks.css";
 
 @import "tailwindcss/utilities";
