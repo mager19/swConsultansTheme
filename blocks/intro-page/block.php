@@ -19,6 +19,7 @@ if (!empty($block['className'])) {
 
 //fields
 $title = get_field('intro_page_title', false, false);
+$subtitle = get_field('intro_page_subtitle', false, false);
 $contentBlock = get_field('intro_page_content');
 $image = get_field('intro_page_image');
 
@@ -38,9 +39,15 @@ $image = get_field('intro_page_image');
             <?php
             } ?>
 
-            <div class="w-full md:w-1/2 md:order-1">
+            <div class="w-full md:w-1/2 md:order-1 py-8 lg:pt-0">
+                <?php if ($subtitle) { ?>
+                    <h5 class="text-title6 text-secondary">
+                        <?php echo $subtitle; ?>
+                    </h5>
+                <?php
+                } ?>
                 <?php if ($title) { ?>
-                    <h3 class="text-title5 md:text-title4 [&_strong]:text-primary py-8 mb-0 text-grey-700 lg:max-w-md lg:pt-0">
+                    <h3 class="text-title5 md:text-title4 [&_strong]:text-primary  mb-0 text-grey-700 lg:max-w-md ">
                         <?php echo $title; ?>
                     </h3>
                 <?php
