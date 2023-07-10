@@ -1,5 +1,5 @@
 {
-    "name": "cta",
+    "name": "cta1",
     "title": "Cta Block",
     "description": "Block cta",
     "category": "swConsultansBlocks",
@@ -8,15 +8,6 @@
     "acf": {
         "mode": "preview",
         "renderTemplate": "blocks/cta/block.php"
-    },
-
-    "example": {
-        "attributes": {
-            "mode": ["preview"],
-            "data": {
-                "_is_preview": ["true"]
-            }
-        }
     },
     "supports": {
         "anchor": true,
