@@ -32,7 +32,7 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
 
-    <div id="page" class="site">
+    <div id="page" class="site overflow-x-hidden">
 
         <!-- topbar -->
         <?php echo get_template_part('template-parts/top', 'bar'); ?>
@@ -40,7 +40,7 @@
         <!-- Header -->
         <header id="masthead" class="site-header bg-gray-300 px-4">
             <div class="container mx-auto">
-                <div class="flex items-center py-4 pxsera-4">
+                <div class="flex items-center p-4">
                     <div class="sitelogo w-9/12 lg:w-4/12 ">
                         <?php
                         $GETlogo = get_field('swConsultans_logo_site', 'option'); ?>

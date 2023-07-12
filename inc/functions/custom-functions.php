@@ -7,7 +7,7 @@ function swConsultans_get_Image($image)
         $img_alt = $image['alt'];
         $img_width = round($image['width'] / 2);
         $img_height = round($image['height'] / 2);
-        $html = '<img src="' . $img_url . '" alt="' . $img_alt . '" width="' . $img_width . '" height="' . $img_height . '" >';
+        $html = '<img src="' . $img_url . '" alt="' . $img_alt . '" width="' . $img_width . '" height="' . $img_height . '" class="h-full w-full" >';
         echo $html;
     }
 }

@@ -247,6 +247,7 @@ textarea {
 --------------------------------------------------------------*/
 a {
     color: royalblue;
+    text-decoration: none;
 }
 
 a:visited {
@@ -845,6 +846,22 @@ blockquote {
                 width: 20px;
                 height: 20px;
             }
+        }
+    }
+}
+
+footer {
+    ul {
+        li {
+            a {
+                @apply text-grey-200 text-overline hover:text-primary visited:bg-grey-200 !important;
+            }
+        }
+    }
+
+    .line {
+        p {
+            @apply text-white text-button text-center pt-4;
         }
     }
 }
