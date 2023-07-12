@@ -34,6 +34,9 @@
 
     <div id="page" class="site">
 
+        <!-- topbar -->
+        <?php echo get_template_part('template-parts/top', 'bar'); ?>
+
         <!-- Header -->
         <header id="masthead" class="site-header bg-gray-300 px-4">
             <div class="container mx-auto">
@@ -55,7 +58,7 @@
                     if (has_nav_menu('menu-1')) { ?>
                         <div class="site__nav site__nav--main w-full hidden lg:flex lg:justify-end">
                             <?php
-                                wp_nav_menu(array('theme_location' => 'menu-1'));
+                            wp_nav_menu(array('theme_location' => 'menu-1'));
                             ?>
                         </div>
                     <?php

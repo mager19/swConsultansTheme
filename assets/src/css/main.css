@@ -9,3 +9,15 @@
 @import "../../../blocks/blocks.css";
 
 @import "tailwindcss/utilities";
+
+@layer {
+    .bgSettings {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .animation {
+        @apply transition-all duration-300 ease-in-out;
+    }
+}

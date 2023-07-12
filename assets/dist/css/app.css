@@ -1374,66 +1374,6 @@ blockquote p {
                     margin-left: 2rem
             }
 }
-@font-face {
-    font-family: "icomoon";
-    src: url(../css/fonts/icomoon.eot);
-    src: url(../css/fonts/icomoon.eot#iefix)
-            format("embedded-opentype"),
-        url(../css/fonts/icomoon.ttf) format("truetype"),
-        url(../css/fonts/icomoon.woff) format("woff"),
-        url(.././img/icomoon.svg#icomoon) format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-[class^="icon-"],
-[class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "icomoon" !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.icon-youtube--d:before {
-    content: "\e906";
-}
-.icon-yelp--d:before {
-    content: "\e90e";
-}
-.icon-twitter--d:before {
-    content: "\e915";
-}
-.icon-linkedin--d:before {
-    content: "\e91f";
-}
-.icon-instagram--d:before {
-    content: "\e936";
-}
-.icon-google-plus--d:before {
-    content: "\e939";
-}
-.icon-facebook--d:before {
-    content: "\e94a";
-}
-.fs1 {
-  grid-column: span 3 / span 3;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.fs1 [class^="icon-"],
-    .fs1 [class*=" icon-"] {
-        font-size: 64px;
-    }
-/*--------------------------------------------------------------
-    Social Icons - Style
---------------------------------------------------------------*/
 .social-icons {
     justify-content: flex-start;
 }
@@ -1476,209 +1416,43 @@ blockquote p {
 .social-icons a:hover i {
                 color: red;
             }
-/*--------------------------------------------------------------
-    List Social Icons
---------------------------------------------------------------*/
-.icon-instagram_icon-12:before {
-    content: "\e918";
-}
-.icon-pnunitoest_icon-2:before {
-    content: "\e91a";
-}
-.icon-pnunitoest_icon-3:before {
-    content: "\e91c";
-}
-.icon-pnunitoest_icon-1:before {
-    content: "\e91d";
-}
-.icon-pnunitoest_icon-4:before {
-    content: "\e91e";
-}
-.icon-pnunitoest_icon:before {
-    content: "\e920";
-}
-.icon-rss_icon:before {
-    content: "\e902";
-}
-.icon-rss_icon-2:before {
-    content: "\e903";
-}
-.icon-rss_icon-1:before {
-    content: "\e911";
-}
-.icon-rss_icon-3:before {
-    content: "\e912";
-}
-.icon-youtube_icon-1:before {
-    content: "\e900";
-}
-.icon-youtube_icon-2:before {
-    content: "\e901";
-}
-.icon-youtube_icon-4:before {
-    content: "\e904";
-}
-.icon-youtube_icon-5:before {
-    content: "\e905";
-}
-.icon-youtube_icon:before {
-    content: "\e906";
-}
-.icon-youtube_icon-6:before {
-    content: "\e907";
-}
-.icon-youtube_icon-7:before {
-    content: "\e908";
-}
-.icon-youtube_icon-8:before {
-    content: "\e909";
-}
-.icon-youtube_icon-9:before {
-    content: "\e90a";
-}
-.icon-youtube_icon-10:before {
-    content: "\e90b";
-}
-.icon-yelp_icon-1:before {
-    content: "\e90c";
-}
-.icon-yelp_icon-2:before {
-    content: "\e90d";
-}
-.icon-yelp_icon:before {
-    content: "\e90e";
-}
-.icon-twitter_icon-2:before {
-    content: "\e90f";
-}
-.icon-twitter_icon-3:before {
-    content: "\e910";
-}
-.icon-twitter_icon:before {
-    content: "\e913";
-}
-.icon-twitter_icon-1:before {
-    content: "\e914";
-}
-.icon-twitter_icon-4:before {
-    content: "\e915";
-}
-.icon-twitter_icon-5:before {
-    content: "\e916";
-}
-.icon-twitter_icon-6:before {
-    content: "\e917";
-}
-.icon-linkedin_icon-4:before {
-    content: "\e919";
-}
-.icon-linkedin_icon-12:before {
-    content: "\e91b";
-}
-.icon-linkedin_icon-2:before {
-    content: "\e91f";
-}
-.icon-linkedin_icon-7:before {
-    content: "\e923";
-}
-.icon-linkedin_icon-8:before {
-    content: "\e924";
-}
-.icon-linkedin_icon-9:before {
-    content: "\e925";
-}
-.icon-linkedin_icon-10:before {
-    content: "\e926";
-}
-.icon-linkedin_icon-11:before {
-    content: "\e927";
-}
-.icon-linkedin_icon-13:before {
-    content: "\e928";
-}
-.icon-instagram_icon-2:before {
-    content: "\e929";
-}
-.icon-instagram_icon-3:before {
-    content: "\e92a";
-}
-.icon-instagram_icon-4:before {
-    content: "\e92b";
-}
-.icon-instagram_icon-6:before {
-    content: "\e930";
-}
-.icon-instagram_icon-7:before {
-    content: "\e931";
-}
-.icon-instagram_icon-8:before {
-    content: "\e932";
-}
-.icon-instagram_icon-9:before {
-    content: "\e933";
-}
-.icon-instagram_icon:before {
-    content: "\e934";
-}
-.icon-instagram_icon-1:before {
-    content: "\e935";
-}
-.icon-instagram_icon-10:before {
-    content: "\e936";
-}
-.icon-instagram_icon-11:before {
-    content: "\e937";
-}
-.icon-google-plus_icon-1:before {
-    content: "\e938";
-}
-.icon-google-plus_icon-4:before {
-    content: "\e939";
-}
-.icon-google-plus_icon-5:before {
-    content: "\e93a";
-}
-.icon-google-plus_icon-6:before {
-    content: "\e93b";
-}
-.icon-google-plus_icon:before {
-    content: "\e93d";
-}
-.icon-google-plus_icon-2:before {
-    content: "\e93e";
-}
-.icon-google-plus_icon-3:before {
-    content: "\e93f";
-}
-.icon-google-plus_icon-8:before {
-    content: "\e940";
-}
-.icon-facebook_icon-2:before {
-    content: "\e941";
-}
-.icon-facebook_icon-3:before {
-    content: "\e942";
-}
-.icon-facebook_icon-4:before {
-    content: "\e943";
-}
-.icon-facebook_icon-5:before {
-    content: "\e944";
-}
-.icon-facebook_icon-7:before {
-    content: "\e947";
-}
-.icon-facebook_icon-8:before {
-    content: "\e948";
-}
-.icon-facebook_icon-9:before {
-    content: "\e949";
-}
-.icon-facebook_icon-10:before {
-    content: "\e94a";
-}
-.icon-facebook_icon-11:before {
-    content: "\e94b";
+.iconSocial {
+}
+@layer {
+    .icon-twitter {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.icon-twitter {
+    background-image: url("data:image/svg+xml,%3Csvg width=%2718%27 height=%2718%27 viewBox=%270 0 18 18%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M16.845 4.5C16.2675 4.7625 15.645 4.935 15 5.0175C15.66 4.62 16.17 3.99 16.41 3.2325C15.7875 3.6075 15.0975 3.87 14.37 4.02C13.7775 3.375 12.945 3 12 3C10.2375 3 8.7975 4.44 8.7975 6.2175C8.7975 6.4725 8.8275 6.72 8.88 6.9525C6.21 6.8175 3.8325 5.535 2.25 3.5925C1.9725 4.065 1.815 4.62 1.815 5.205C1.815 6.3225 2.3775 7.3125 3.2475 7.875C2.715 7.875 2.22 7.725 1.785 7.5V7.5225C1.785 9.0825 2.895 10.3875 4.365 10.68C3.89304 10.8092 3.39757 10.8271 2.9175 10.7325C3.1212 11.3719 3.52015 11.9313 4.05826 12.3322C4.59637 12.7331 5.24658 12.9553 5.9175 12.9675C4.78022 13.8678 3.3705 14.3545 1.92 14.3475C1.665 14.3475 1.41 14.3325 1.155 14.3025C2.58 15.2175 4.275 15.75 6.09 15.75C12 15.75 15.2475 10.845 15.2475 6.5925C15.2475 6.45 15.2475 6.315 15.24 6.1725C15.87 5.7225 16.41 5.1525 16.845 4.5Z%27 fill=%27white%27/%3E%3C/svg%3E%0A");
+    width: 18px;
+    height: 18px;
+}
+@layer {
+    .icon-facebook {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.icon-facebook {
+    background-image: url("data:image/svg+xml,%3Csvg width=%2718%27 height=%2718%27 viewBox=%270 0 18 18%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M15.4688 1.96875H2.53125C2.22012 1.96875 1.96875 2.22012 1.96875 2.53125V15.4688C1.96875 15.7799 2.22012 16.0312 2.53125 16.0312H15.4688C15.7799 16.0312 16.0312 15.7799 16.0312 15.4688V2.53125C16.0312 2.22012 15.7799 1.96875 15.4688 1.96875ZM13.8445 6.07324H12.7213C11.8406 6.07324 11.6701 6.4916 11.6701 7.10684V8.46211H13.7725L13.4982 10.5838H11.6701V16.0312H9.47813V10.5855H7.64473V8.46211H9.47813V6.89766C9.47813 5.08184 10.5873 4.09219 12.208 4.09219C12.985 4.09219 13.6512 4.1502 13.8463 4.17656V6.07324H13.8445Z%27 fill=%27white%27/%3E%3C/svg%3E");
+    width: 18px;
+    height: 18px;
+}
+@layer {
+    .icon-linkedin {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+.icon-linkedin {
+    background-image: url("data:image/svg+xml,%3Csvg width=%2718%27 height=%2718%27 viewBox=%270 0 18 18%27 fill=%27none%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath d=%27M14.25 2.25C14.6478 2.25 15.0294 2.40804 15.3107 2.68934C15.592 2.97064 15.75 3.35218 15.75 3.75V14.25C15.75 14.6478 15.592 15.0294 15.3107 15.3107C15.0294 15.592 14.6478 15.75 14.25 15.75H3.75C3.35218 15.75 2.97064 15.592 2.68934 15.3107C2.40804 15.0294 2.25 14.6478 2.25 14.25V3.75C2.25 3.35218 2.40804 2.97064 2.68934 2.68934C2.97064 2.40804 3.35218 2.25 3.75 2.25H14.25ZM13.875 13.875V9.9C13.875 9.25155 13.6174 8.62965 13.1589 8.17112C12.7003 7.7126 12.0785 7.455 11.43 7.455C10.7925 7.455 10.05 7.845 9.69 8.43V7.5975H7.5975V13.875H9.69V10.1775C9.69 9.6 10.155 9.1275 10.7325 9.1275C11.011 9.1275 11.278 9.23812 11.475 9.43504C11.6719 9.63195 11.7825 9.89902 11.7825 10.1775V13.875H13.875ZM5.16 6.42C5.49417 6.42 5.81466 6.28725 6.05095 6.05095C6.28725 5.81466 6.42 5.49417 6.42 5.16C6.42 4.4625 5.8575 3.8925 5.16 3.8925C4.82384 3.8925 4.50144 4.02604 4.26374 4.26374C4.02604 4.50144 3.8925 4.82384 3.8925 5.16C3.8925 5.8575 4.4625 6.42 5.16 6.42ZM6.2025 13.875V7.5975H4.125V13.875H6.2025Z%27 fill=%27white%27/%3E%3C/svg%3E");
+    width: 18px;
+    height: 18px;
 }
 .btn {
   display: flex;
@@ -1942,6 +1716,10 @@ blockquote p {
 .gap-8 {
   gap: 2rem;
 }
+.gap-x-4 {
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
 .gap-y-6 {
   row-gap: 1.5rem;
 }
@@ -1998,6 +1776,10 @@ blockquote p {
 }
 .p-0 {
   padding: 0px;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -2106,13 +1888,13 @@ blockquote p {
   --tw-text-opacity: 1;
   color: rgb(205 4 154 / var(--tw-text-opacity));
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(103 0 103 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -2143,6 +1925,19 @@ blockquote p {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+@layer {
+    .bgSettings {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .animation {
+    transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 .visited\:bg-grey-200:visited {
   background-color: rgb(228 231 236 );
