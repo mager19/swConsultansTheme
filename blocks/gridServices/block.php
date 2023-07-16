@@ -42,7 +42,7 @@ $services = get_field('select_services');
 
                 <?php
                 if ($services) { ?>
-                    <div class="gridServices__item grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-8 mt-6 md:mt-16">
+                    <div class="gridServices__item grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6 md:mt-16">
                         <?php
                         foreach ($services as $service) { ?>
                             <div class="item">
