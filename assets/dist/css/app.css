@@ -1685,6 +1685,12 @@ footer .line p {
 .h-full {
   height: 100%;
 }
+.h-96 {
+  height: 24rem;
+}
+.h-auto {
+  height: auto;
+}
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -1847,6 +1853,10 @@ footer .line p {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-0 {
   padding: 0px;
@@ -2304,6 +2314,10 @@ footer .line p {
 
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:w-72 {
+    width: 18rem;
   }
 
   .lg\:max-w-2xl {

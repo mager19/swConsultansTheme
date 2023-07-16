@@ -674,6 +674,12 @@ video {
 .h-1\/2 {
   height: 50%;
 }
+.h-96 {
+  height: 24rem;
+}
+.h-auto {
+  height: auto;
+}
 .w-1\/12 {
   width: 8.333333%;
 }
@@ -847,6 +853,10 @@ video {
 }
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-0 {
   padding: 0px;
@@ -1320,6 +1330,10 @@ video {
 
   .lg\:w-6\/12 {
     width: 50%;
+  }
+
+  .lg\:w-72 {
+    width: 18rem;
   }
 
   .lg\:max-w-2xl {

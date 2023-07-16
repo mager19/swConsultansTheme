@@ -49,7 +49,7 @@ $services = get_field('select_services');
                                 <?php
                                 $image = get_the_post_thumbnail_url($service->ID);
                                 if ($image) { ?>
-                                    <img class='border-b-2 border-primary' src="<?php echo $image; ?>" alt="<?php echo $service->post_title; ?>">
+                                    <img class='border-b-2 border-primary w-full lg:w-72 h-96 object-cover' src="<?php echo $image; ?>" alt="<?php echo $service->post_title; ?>">
                                 <?php
                                 }
                                 ?>
