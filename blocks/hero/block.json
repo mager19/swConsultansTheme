@@ -1,0 +1,20 @@
+{
+    "name": "hero",
+    "title": "Hero Block",
+    "description": "Block Hero With Variations",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "cover-image",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/hero/block.php"
+    },
+    "styles": [
+        { "name": "big", "label": "Big Hero", "isDefault": true },
+        { "name": "small", "label": "Small Hero" }
+    ],
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
