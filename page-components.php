@@ -114,30 +114,33 @@ get_header(); ?>
     </div>
 </header>
 
-
 <div class="logos__container bg-primary">
-    <div class="container mx-auto">
+    <div class="container mx-auto py-24 lg:py-20">
         <div class="flex flex-wrap">
             <div class="logos-section px-4">
                 <div class="content md:w-9/12">
-                    <div class="sub-title">
-                        <h4 class="text-grey-50 text-body mt-24 md:mt-20 mb-0">
-                            Logos
-                        </h4>
-                    </div>
+                    <?php if (get_field('subtitle_logos')) { ?>
+                        <div class="sub-title">
+                            <h4 class="text-grey-50 text-body font-bold mb-0">
+                                <?php echo get_field('subtitle_logos'); ?>
+                            </h4>
+                        </div>
+                    <?php
+                    } ?>
+
                     <div class="title">
-                        <h3 class="md:text-title4 text-title5 text-grey-50 w-7/12 md:w-7/12 md:mt-2 mb-0">
+                        <h3 class="md:text-title4 text-title5 text-grey-50 w-7/12 md:w-10/12 md:mt-2 mb-0">
                             Association and Registration
                         </h3>
                     </div>
                     <div class="paragraph">
-                        <p class="text-body text-grey-50 mt-2 md:w-9/12 md:mt-1 mb-0">
+                        <p class="text-body text-grey-50 mt-2 md:w-10/12 md:mt-1 mb-0">
                             Curabitur vitae lectus nibh. Ut finibus dui eu risus consequat, non viverra ligula finibus. Aliquam erat volutpat. Vivamus dapibus auctor nibh ac feugiat. Duis elementum sit amet quam sed feugiat.
                         </p>
                     </div>
                 </div>
-                <div class="logo-list py-10 mb-11 md:w-11/12 md:mt-2">
-                    <ul class="grid grid-cols-2 gap-y-6 md:grid-cols-4 m-0 lg:ml-4">
+                <div class="logo-list pt-10 md:w-11/12 md:mt-2">
+                    <ul class="grid grid-cols-2 gap-6 md:grid-cols-4 m-0 lg:ml-4">
                         <li class="list-none mb-0">
                             <a href="#">
                                 <svg width="153" height="38" viewBox="0 0 153 38" fill="none" xmlns="http://www.w3.org/2000/svg">

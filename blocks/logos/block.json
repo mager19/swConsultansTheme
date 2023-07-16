@@ -1,0 +1,16 @@
+{
+    "name": "logos",
+    "title": "Logos Block",
+    "description": "Block logos",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "editor-table",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/logos/block.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
