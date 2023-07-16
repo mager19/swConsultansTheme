@@ -1,0 +1,16 @@
+{
+    "name": "gridServices",
+    "title": "Grid Services Block",
+    "description": "Block Grid Services",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "editor-insertmore",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/gridServices/block.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}
