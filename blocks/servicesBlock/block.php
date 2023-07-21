@@ -23,7 +23,7 @@ $services = get_field('services');
 
 ?>
 
-<div id="<?php echo $block_id ?>" class="<?php echo $block_class ?>">
+<div id="<?php echo $block_id ?>" class="<?php echo $block_class ?> bg-grey-100">
     <div class="container mx-auto py-15 lg:py-20">
         <div class="flex flex-wrap px-4">
             <?php if ($titleSection) { ?>
