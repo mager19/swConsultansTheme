@@ -26,7 +26,7 @@ $image = get_field('background_image');
 <div id="<?php echo $block_id ?>" class="<?php echo $block_class ?>">
 
     <?php
-    $pos = strpos('is-style-small', $block['className']);
+    $pos = strpos('is-style-small', $block['className'] ?? true);
 
     if ($pos === false) { ?>
         <div class="md:w-full h-[424px] lg:h-[650px] bg-no-repeat bg-cover" style="background-image: url('<?php echo $image; ?>');">

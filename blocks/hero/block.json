@@ -10,7 +10,7 @@
         "renderTemplate": "blocks/hero/block.php"
     },
     "styles": [
-        { "name": "big", "label": "Big Hero", "isDefault": true },
+        { "name": "default", "label": "Default", "isDefault": true },
         { "name": "small", "label": "Small Hero" }
     ],
     "supports": {
