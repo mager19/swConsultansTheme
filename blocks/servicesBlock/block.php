@@ -20,15 +20,24 @@ if (!empty($block['className'])) {
 $titleSection = get_field('title_services_block');
 $services = get_field('services');
 
+$pos = strpos('is-style-dark', $block['className'] ?? true);
+
+if ($pos === false) {
+    $bg = 'bg-grey-100';
+    $tx = 'text-grey-700';
+} else {
+    $bg = 'bg-grey-700';
+    $tx = 'text-white';
+}
 
 ?>
 
-<div id="<?php echo $block_id ?>" class="<?php echo $block_class ?> bg-grey-100">
+<div id="<?php echo $block_id ?>" class="<?php echo $block_class ?> <?php echo $bg; ?>">
     <div class="container mx-auto py-15 lg:py-20">
         <div class="flex flex-wrap px-4">
             <?php if ($titleSection) { ?>
                 <div class="w-full">
-                    <h3 class="text-title3 lg:text-title2 lg:max-w-lg"><?php echo $titleSection; ?></h3>
+                    <h3 class="text-title3 lg:text-title2 lg:max-w-lg <?php echo $tx; ?>"><?php echo $titleSection; ?></h3>
                 </div>
             <?php
             } ?>
@@ -41,17 +50,14 @@ $services = get_field('services');
                             <h5 class="text-display1 text-primary">
                                 <?php echo $service['number']; ?>
                             </h5>
-                            <h4 class="text-title6 mb-9 mt-6">
+                            <h4 class="text-title6 mb-9 mt-6 <?php echo $tx; ?>">
                                 <?php echo $service['title_service']; ?>
                             </h4>
-                            <p class='text-body text-grey-700'><?php echo $service['description_service']; ?></p>
-
+                            <p class='text-body <?php echo $tx; ?>'><?php echo $service['description_service']; ?></p>
                             <?php if ($service['link_service']) { ?>
-
                                 <a class="text-primary text-button visited:text-primary font-bold" href="<?php echo $service['link_service']['url']; ?>">
                                     <?php echo $service['link_service']['title']; ?>
                                 </a>
-
                             <?php
                             } ?>
                         </div>

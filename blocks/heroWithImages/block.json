@@ -1,0 +1,16 @@
+{
+    "name": "heroWithImages",
+    "title": "Hero With Images",
+    "description": "Block with 3 images in a simple grid",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "align-left",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/heroWithImages/block.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

@@ -9,6 +9,10 @@
         "mode": "preview",
         "renderTemplate": "blocks/servicesBlock/block.php"
     },
+    "styles": [
+        { "name": "light", "label": "Light", "isDefault": true },
+        { "name": "dark", "label": "Dark" }
+    ],
     "example": {
         "attributes": {
             "mode": ["preview"],
