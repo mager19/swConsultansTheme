@@ -18,6 +18,7 @@ if (!empty($block['className'])) {
 
 //Fields
 $titleSection = get_field('title_services_block');
+$description = get_field('description');
 $services = get_field('services');
 
 $pos = strpos('is-style-dark', $block['className'] ?? true);
@@ -35,12 +36,24 @@ if ($pos === false) {
 <div id="<?php echo $block_id ?>" class="<?php echo $block_class ?> <?php echo $bg; ?>">
     <div class="container mx-auto py-15 lg:py-20">
         <div class="flex flex-wrap px-4">
-            <?php if ($titleSection) { ?>
-                <div class="w-full">
+
+            <div class="w-full">
+                <?php
+                if ($titleSection) { ?>
                     <h3 class="text-title3 lg:text-title2 lg:max-w-lg <?php echo $tx; ?>"><?php echo $titleSection; ?></h3>
-                </div>
-            <?php
-            } ?>
+                <?php
+                }
+                ?>
+                <?php
+                if ($description) { ?>
+                    <p class='text-body <?php echo $tx; ?> lg:max-w-xl'>
+                        <?php echo $description; ?>
+                    </p>
+                <?php
+                }
+                ?>
+            </div>
+
 
             <?php if ($services) { ?>
                 <div class="services__container grid grid-cols-1 gap-8 md:grid-cols-3 pt-0 lg:pt-12">
