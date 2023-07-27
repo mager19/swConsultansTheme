@@ -38,12 +38,12 @@
         <?php echo get_template_part('template-parts/top', 'bar'); ?>
 
         <!-- Header -->
-        <header id="masthead" class="site-header bg-gray-300 px-4">
+        <header id="masthead" class="site-header bg-white px-4">
             <div class="container mx-auto">
                 <div class="flex items-center p-4">
                     <div class="sitelogo w-9/12 lg:w-4/12 ">
                         <?php
-                        $GETlogo = get_field('swConsultans_logo_site', 'option'); ?>
+                        $GETlogo = get_field('logo_site', 'option'); ?>
                         <a href="<?php echo esc_url(get_bloginfo('url')); ?>">
                             <?php if ($GETlogo) {
                                 swConsultans_get_Image($GETlogo);
