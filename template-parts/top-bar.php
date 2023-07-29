@@ -1,5 +1,5 @@
 <div class="topbar bg-secondary">
-    <div class="container mx-auto">
+    <div class="w-full lg:w-10/12 mx-auto">
         <div class="flex flex-wrap px-4">
             <div class="email w-8/12 md:w-1/2">
                 <a href="mailto: <?php echo get_field('email', 'option'); ?>" class="text-white flex items-center gap-2 text-overline hover:text-white hover:opacity-80 visited:text-white">

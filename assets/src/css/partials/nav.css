@@ -1,16 +1,12 @@
 .site__nav {
     ul {
-        @apply flex justify-end items-center mb-0;
+        @apply lg:flex lg:gap-6 justify-around items-center m-0 w-full;
 
         li {
-            @apply mb-0 list-none;
-
-            &:not(:first-child) {
-                @apply ml-8;
-            }
+            @apply mb-0 list-none inline-flex text-center;
 
             a {
-                @apply text-dark-1 hover:text-dark-3 font-semibold hover:underline hover:decoration-primary;
+                @apply text-dark-1 leading-5 hover:text-dark-3 font-semibold hover:underline hover:decoration-primary;
             }
         }
     }
