@@ -16,10 +16,10 @@ if (!empty($block['className'])) {
   $block_class .= ' ' . $block['className'];
 }
 
-$title = get_field('title_block');
+
 $boxtitle = get_field('boxinfo_title');
 $boxcontent = get_field('boxinfo_content');
-$description = get_field('description', false, false);
+
 $contact = get_field('form_shortcode');
 
 ?>
@@ -27,17 +27,6 @@ $contact = get_field('form_shortcode');
   <div class="container mx-auto py-15 lg:py-20">
     <div class="flex flex-wrap items-center px-4">
       <div class="w-full lg:w-1/2 lg:pr-8">
-        <div class="title">
-          <?php if ($title) { ?>
-            <h2 class='text-title3 text-grey-700'><?php echo $title; ?></h2>
-          <?php
-          } ?>
-
-          <?php if ($description) { ?>
-            <p class="text-body text-grey-700"><?php echo $description; ?></p>
-          <?php
-          } ?>
-        </div>
         <div class="form">
           <?php echo $contact; ?>
         </div>
