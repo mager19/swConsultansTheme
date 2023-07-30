@@ -1,0 +1,16 @@
+{
+    "name": "boxinfo",
+    "title": "Box Info Block",
+    "description": "Box info block",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "format-aside",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/boxinfo/block.php"
+    },
+    "supports": {
+        "anchor": true,
+        "jsx": true
+    }
+}

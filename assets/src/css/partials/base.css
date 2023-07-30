@@ -213,7 +213,7 @@ textarea {
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px;
-    padding: 3px;
+    padding: 10px;
 }
 
 input[type="text"]:focus,
@@ -647,25 +647,6 @@ a {
     }
 }
 
-input[type="text"],
-select,
-textarea {
-    @apply font-normal text-light-1;
-    border-radius: 9px;
-    border: 1px solid theme(colors.primary.lighter);
-    box-sizing: border-box;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 22px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-select {
-    @apply appearance-none;
-    /* Some browsers will not display the caret when using calc, so we put the fallback first */
-    background: url("../img/arrow-select.svg") #fff no-repeat 98.5% !important; /* !important used for overriding all other customisations */
-    background: url("../img/arrow-select.svg") #fff no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
-}
 /*For IE*/
 select::-ms-expand {
     @apply hidden;
@@ -716,12 +697,24 @@ a img.aligncenter {
     margin-right: auto;
 }
 
-input[type="text"],
+input,
 select {
-    @apply w-full py-4 appearance-none text-dark-3;
+    @apply w-full pl-4 py-4 appearance-none bg-grey-100 rounded-3xl h-12 text-grey-700;
     border-radius: 10px;
     border: 3px solid #ebf2ff;
     box-sizing: border-box;
+    &:focus {
+        @apply outline-none;
+    }
+}
+
+input[type="submit"] {
+    @apply bg-primary text-white rounded-full border-none text-body font-bold lg:w-1/3 hover:bg-grey-700 cursor-pointer transition-all duration-300 ease-linear;
+}
+
+textarea {
+    @apply w-full py-4 appearance-none bg-grey-100 rounded-lg text-grey-700;
+
     &:focus {
         @apply outline-none;
     }

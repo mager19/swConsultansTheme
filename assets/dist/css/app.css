@@ -740,7 +740,7 @@ textarea {
     color: #666;
     border: 1px solid #ccc;
     border-radius: 3px;
-    padding: 3px;
+    padding: 10px;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -1135,29 +1135,6 @@ a:hover {
   --tw-text-opacity: 1;
   color: rgb(103 0 103 / var(--tw-text-opacity));
 }
-input[type="text"],
-select,
-textarea {
-  font-weight: 400;
-  --tw-text-opacity: 1;
-  color: rgb(246 249 253 / var(--tw-text-opacity));
-    border-radius: 9px;
-    border: 1px solid #F19898;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-style: normal;
-    line-height: 22px;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-}
-select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-    /* Some browsers will not display the caret when using calc, so we put the fallback first */
-    background: url(.././img/arrow-select.svg) #fff no-repeat 98.5% !important; /* !important used for overriding all other customisations */
-    background: url(.././img/arrow-select.svg) #fff no-repeat calc(100% - 10px) !important; /* Better placement regardless of input width */
-}
 /*For IE*/
 select::-ms-expand {
   display: none;
@@ -1201,21 +1178,69 @@ a img.aligncenter {
     margin-left: auto;
     margin-right: auto;
 }
-input[type="text"],
+input,
 select {
+  height: 3rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  border-radius: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 244 247 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
+  padding-left: 1rem;
   --tw-text-opacity: 1;
-  color: rgb(79 101 143 / var(--tw-text-opacity));
+  color: rgb(52 64 84 / var(--tw-text-opacity));
     border-radius: 10px;
     border: 3px solid #ebf2ff;
     box-sizing: border-box;
 }
-input[type="text"]:focus, select:focus {
+input:focus, select:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+input[type="submit"] {
+  cursor: pointer;
+  border-radius: 9999px;
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 4 154 / var(--tw-bg-opacity));
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+input[type="submit"]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 64 84 / var(--tw-bg-opacity));
+}
+@media (min-width: 1024px) {
+
+  input[type="submit"] {
+    width: 33.333333%;
+  }
+}
+textarea {
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 244 247 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(52 64 84 / var(--tw-text-opacity));
+}
+textarea:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
@@ -1801,6 +1826,9 @@ header {
 .items-center {
   align-items: center;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 .justify-end {
   justify-content: flex-end;
 }
@@ -1910,6 +1938,10 @@ header {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -1960,6 +1992,11 @@ header {
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 500;
+}
+.text-bodyBold {
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  font-weight: 700;
 }
 .text-button {
   font-size: 0.875rem;
@@ -2081,6 +2118,9 @@ header {
 .visited\:bg-grey-200:visited {
   background-color: rgb(228 231 236 );
 }
+.visited\:bg-white:visited {
+  background-color: rgb(255 255 255 );
+}
 .visited\:text-grey-700:visited {
   color: rgb(52 64 84 );
 }
@@ -2130,6 +2170,10 @@ header {
 
   .md\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .md\:mt-3 {
+    margin-top: 0.75rem;
   }
 
   .md\:mt-4 {
@@ -2349,10 +2393,6 @@ header {
     width: 83.333333%;
   }
 
-  .lg\:w-11\/12 {
-    width: 91.666667%;
-  }
-
   .lg\:w-2\/12 {
     width: 16.666667%;
   }
@@ -2463,6 +2503,10 @@ header {
     padding-bottom: 3.5rem;
   }
 
+  .lg\:pr-8 {
+    padding-right: 2rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -2509,9 +2553,6 @@ header {
 .\[\&_img\]\:object-cover img {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.\[\&_img\]\:opacity-25 img {
-  opacity: 0.25;
 }
 @media (min-width: 768px) {
 
