@@ -697,7 +697,8 @@ a img.aligncenter {
     margin-right: auto;
 }
 
-input,
+input[type="text"],
+input[type="submit"],
 select {
     @apply w-full pl-4 py-4 appearance-none bg-grey-100 rounded-3xl h-12 text-grey-700;
     border-radius: 10px;
