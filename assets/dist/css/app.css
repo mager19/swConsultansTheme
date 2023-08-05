@@ -1188,14 +1188,14 @@ select {
           appearance: none;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(242 244 247 / var(--tw-bg-opacity));
+  background-color: rgb(246 249 253 / var(--tw-bg-opacity));
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   --tw-text-opacity: 1;
   color: rgb(52 64 84 / var(--tw-text-opacity));
     border-radius: 10px;
-    border: 3px solid #ebf2ff;
+    border: 1px solid #d0d5dd;
     box-sizing: border-box;
 }
 input[type="text"]:focus, input[type="submit"]:focus, select:focus {
@@ -1403,6 +1403,19 @@ header {
         [type="file"]
     ) {
     line-height: 0 !important;
+}
+.gsection {
+  margin-top: 1rem;
+}
+@media (min-width: 1024px) {
+
+  .gsection {
+    margin-top: 2rem;
+  }
+}
+.gform_wrapper.gravity-theme .ginput_total {
+  font-weight: 700;
+    font-size: 3rem;
 }
 .site__nav ul {
   margin: 0px;

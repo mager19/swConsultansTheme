@@ -700,9 +700,9 @@ a img.aligncenter {
 input[type="text"],
 input[type="submit"],
 select {
-    @apply w-full pl-4 py-4 appearance-none bg-grey-100 rounded-3xl h-12 text-grey-700;
+    @apply w-full pl-4 py-4 appearance-none bg-light-1 rounded-3xl h-12 text-grey-700;
     border-radius: 10px;
-    border: 3px solid #ebf2ff;
+    border: 1px solid #d0d5dd;
     box-sizing: border-box;
     &:focus {
         @apply outline-none;
@@ -836,4 +836,13 @@ header {
         [type="file"]
     ) {
     line-height: 0 !important;
+}
+
+.gsection {
+    @apply mt-4 lg:mt-8;
+}
+
+.gform_wrapper.gravity-theme .ginput_total {
+    @apply font-bold;
+    font-size: 3rem;
 }
