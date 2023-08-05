@@ -697,15 +697,12 @@ a img.aligncenter {
     margin-right: auto;
 }
 
-.ginput_container_phone input {
-}
-
 input[type="text"],
 input[type="submit"],
 input[type="tel"],
 input[type="email"],
 select {
-    @apply w-full pl-4 py-4 appearance-none bg-light-1 rounded-3xl h-12 text-grey-700;
+    @apply w-full pl-4 py-4 appearance-none bg-light-1 rounded-3xl h-12 text-grey-700 !important;
     border-radius: 10px;
     border: 1px solid #d0d5dd;
     box-sizing: border-box;
