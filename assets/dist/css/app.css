@@ -1982,6 +1982,9 @@ header {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .font-nunito {
   font-family: Nunito, sans-serif;
 }
@@ -2499,6 +2502,11 @@ header {
     padding-bottom: 5rem;
   }
 
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
@@ -2585,6 +2593,24 @@ header {
 .\[\&_strong\]\:text-primary strong {
   --tw-text-opacity: 1;
   color: rgb(205 4 154 / var(--tw-text-opacity));
+}
+.\[\&_ul\]\:ml-0 ul {
+  margin-left: 0px;
+}
+.\[\&_ul\]\:ml-2 ul {
+  margin-left: 0.5rem;
+}
+.\[\&_ul\]\:ml-3 ul {
+  margin-left: 0.75rem;
+}
+.\[\&_ul\]\:ml-4 ul {
+  margin-left: 1rem;
+}
+.\[\&_ul\]\:ml-5 ul {
+  margin-left: 1.25rem;
+}
+.\[\&_ul\]\:opacity-20 ul {
+  opacity: 0.2;
 }
 
 /*!*********************************************************************************************************************************************************************!*\

@@ -605,9 +605,6 @@ video {
 .mt-9 {
   margin-top: 2.25rem;
 }
-.mb-15 {
-  margin-bottom: 3.75rem;
-}
 .block {
   display: block;
 }
@@ -719,11 +716,6 @@ video {
 .list-none {
   list-style-type: none;
 }
-.appearance-none {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -741,9 +733,6 @@ video {
 }
 .flex-wrap {
   flex-wrap: wrap;
-}
-.items-start {
-  align-items: flex-start;
 }
 .items-center {
   align-items: center;
@@ -793,9 +782,6 @@ video {
 .rounded {
   border-radius: 0.25rem;
 }
-.rounded-full {
-  border-radius: 9999px;
-}
 .border {
   border-width: 1px;
 }
@@ -840,10 +826,6 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-grey-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 231 236 / var(--tw-bg-opacity));
-}
 .bg-cover {
   background-size: cover;
 }
@@ -866,6 +848,10 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .py-12 {
   padding-top: 3rem;
@@ -895,14 +881,6 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .pt-0 {
   padding-top: 0px;
 }
@@ -915,6 +893,9 @@ video {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .font-nunito {
   font-family: Nunito, sans-serif;
 }
@@ -925,6 +906,11 @@ video {
   font-size: 1.125rem;
   line-height: 1.5rem;
   font-weight: 500;
+}
+.text-bodyBold {
+  font-size: 1.125rem;
+  line-height: 1.575rem;
+  font-weight: 700;
 }
 .text-button {
   font-size: 0.875rem;
@@ -959,11 +945,6 @@ video {
 .text-title6 {
   font-size: 1.25rem;
   line-height: 1.25rem;
-  font-weight: 700;
-}
-.text-bodyBold {
-  font-size: 1.125rem;
-  line-height: 1.575rem;
   font-weight: 700;
 }
 .font-bold {
@@ -1005,9 +986,6 @@ video {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.opacity-80 {
-  opacity: 0.8;
-}
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -1037,14 +1015,6 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-.duration-500 {
-  transition-duration: 500ms;
 }
 .visited\:bg-grey-200:visited {
   background-color: rgb(228 231 236 );
@@ -1103,6 +1073,10 @@ video {
     margin-top: 0.5rem;
   }
 
+  .md\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .md\:mt-4 {
     margin-top: 1rem;
   }
@@ -1113,22 +1087,6 @@ video {
 
   .md\:mt-9 {
     margin-top: 2.25rem;
-  }
-
-  .md\:mb-\[101px\] {
-    margin-bottom: 101px;
-  }
-
-  .md\:mt-24 {
-    margin-top: 6rem;
-  }
-
-  .md\:mt-3 {
-    margin-top: 0.75rem;
-  }
-
-  .md\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .md\:flex {
@@ -1193,10 +1151,6 @@ video {
 
   .md\:w-screen {
     width: 100vw;
-  }
-
-  .md\:w-\[448px\] {
-    width: 448px;
   }
 
   .md\:max-w-md {
@@ -1446,8 +1400,17 @@ video {
     padding-bottom: 5rem;
   }
 
+  .lg\:py-14 {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
   .lg\:pb-14 {
     padding-bottom: 3.5rem;
+  }
+
+  .lg\:pr-8 {
+    padding-right: 2rem;
   }
 
   .lg\:pt-0 {
@@ -1456,10 +1419,6 @@ video {
 
   .lg\:pt-12 {
     padding-top: 3rem;
-  }
-
-  .lg\:pr-8 {
-    padding-right: 2rem;
   }
 
   .lg\:text-left {
@@ -1532,6 +1491,24 @@ video {
 .\[\&_strong\]\:text-primary strong {
   --tw-text-opacity: 1;
   color: rgb(205 4 154 / var(--tw-text-opacity));
+}
+.\[\&_ul\]\:ml-0 ul {
+  margin-left: 0px;
+}
+.\[\&_ul\]\:ml-2 ul {
+  margin-left: 0.5rem;
+}
+.\[\&_ul\]\:ml-3 ul {
+  margin-left: 0.75rem;
+}
+.\[\&_ul\]\:ml-4 ul {
+  margin-left: 1rem;
+}
+.\[\&_ul\]\:ml-5 ul {
+  margin-left: 1.25rem;
+}
+.\[\&_ul\]\:opacity-20 ul {
+  opacity: 0.2;
 }
 
 

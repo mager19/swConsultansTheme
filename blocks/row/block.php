@@ -18,9 +18,9 @@ if (!empty($block['className'])) {
 
 ?>
 
-<div id="<?php echo $block_id ?>" class="<?php echo $block_class ?>">
+<div id="<?php echo $block_id ?>" class="<?php echo $block_class ?> py-8 lg:py-14">
     <div class="container mx-auto">
-        <div class="flex flex-wrap px-4">
+        <div class="flex flex-wrap px-4 [&_ul]:ml-5">
             <InnerBlocks />
         </div>
     </div>

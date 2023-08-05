@@ -1,0 +1,17 @@
+{
+    "name": "button_custom",
+    "title": "Button Custom Block",
+    "description": "Button Custom block",
+    "category": "swConsultansBlocks",
+    "apiVersion": 2,
+    "icon": "admin-links",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "blocks/buttonCustom/block.php"
+    },
+    "supports": {
+        "anchor": true,
+        "align": true,
+        "jsx": true
+    }
+}
