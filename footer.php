@@ -98,8 +98,18 @@ if (!is_404()) {
                     </div>
                 </div>
             </div>
-            <div class="line border-t w-full mt-9">
-                <?php echo get_field('copyright', 'option'); ?>
+            <div class="line border-t w-full mt-9 flex flex-wrap justify-between [&_p]:mb-1">
+                <div class="left w-full lg:w-1/3 [&_p]:text-center lg:[&_p]:text-left">
+                    <?php echo get_field('copyright', 'option'); ?>
+                </div>
+                <div class="right w-full lg:w-2/3 md:px-4 lg:px-0 lg:mb-2">
+                    <p class="text-body text-white text-center lg:text-right">
+                        Registrant: SW Consultants Pty Ltd -
+                        Registration Number: 4945A -
+                        PQC Rating: Level 3 -
+                        Date of Issue: 16 May 2023
+                    </p>
+                </div>
             </div>
         </div>
     </div>

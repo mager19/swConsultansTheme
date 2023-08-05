@@ -789,7 +789,7 @@ footer {
 
     .line {
         p {
-            @apply text-white text-button text-center pt-4;
+            @apply text-white text-button pt-4;
         }
     }
 }
