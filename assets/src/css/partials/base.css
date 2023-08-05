@@ -712,7 +712,7 @@ select {
 }
 
 input[type="submit"] {
-    @apply bg-primary text-white rounded-full border-none text-body font-bold lg:w-1/3 hover:bg-grey-700 cursor-pointer transition-all duration-300 ease-linear;
+    @apply bg-primary text-white rounded-full border-none text-body font-bold lg:w-1/3 hover:bg-grey-700 cursor-pointer transition-all duration-300 ease-linear !important;
 }
 
 textarea {

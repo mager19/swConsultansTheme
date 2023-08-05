@@ -1205,29 +1205,29 @@ input[type="text"]:focus, input[type="submit"]:focus, input[type="tel"]:focus, i
   outline-offset: 2px;
 }
 input[type="submit"] {
-  cursor: pointer;
-  border-radius: 9999px;
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: rgb(205 4 154 / var(--tw-bg-opacity));
-  font-size: 1.125rem;
-  line-height: 1.5rem;
-  font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
-  transition-timing-function: linear;
+  cursor: pointer !important;
+  border-radius: 9999px !important;
+  border-style: none !important;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(205 4 154 / var(--tw-bg-opacity)) !important;
+  font-size: 1.125rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 700 !important;
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 300ms !important;
+  transition-timing-function: linear !important;
 }
 input[type="submit"]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 64 84 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(52 64 84 / var(--tw-bg-opacity)) !important;
 }
 @media (min-width: 1024px) {
 
   input[type="submit"] {
-    width: 33.333333%;
+    width: 33.333333% !important;
   }
 }
 textarea {
