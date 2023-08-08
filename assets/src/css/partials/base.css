@@ -848,3 +848,55 @@ header {
     @apply font-bold;
     font-size: 3rem;
 }
+
+
+
+.menuModal {
+    .iziModal-content {
+        @apply bg-primary text-white;
+
+        .modal__content {
+            /* @apply px-7 !important; */
+
+            p{
+                @apply text-white;
+            }
+
+            img {
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+
+            ul {
+                @apply ml-4 mt-5 !important;
+
+                li {
+                    list-style: disc;
+                    a {
+                        @apply text-white font-semibold visited:text-white;
+                        letter-spacing: 1px;
+                        transition: all 0.3s linear;
+
+                        &:hover {
+                            @apply opacity-80;
+                        }
+
+                        &:visited {
+                            @apply text-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.iziModal-content {
+    @apply px-8 pt-4 pb-8 !important;
+
+    button{
+        @apply bg-transparent border-0;
+    }
+}
