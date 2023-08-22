@@ -104,10 +104,7 @@ if (!is_404()) {
                 </div>
                 <div class="right w-full lg:w-2/3 md:px-4 lg:px-0 lg:mb-2">
                     <p class="text-body text-white text-center lg:text-right">
-                        Registrant: SW Consultants Pty Ltd -
-                        Registration Number: 4945A -
-                        PQC Rating: Level 3 -
-                        Date of Issue: 16 May 2023
+                        <?php echo get_field('bottom_bar', 'option'); ?>
                     </p>
                 </div>
             </div>
